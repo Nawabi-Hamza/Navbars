@@ -1,0 +1,91 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* First Navbar Style */
+.navbar-one{
+    height: 66px;
+    background-color: lightpink;
+}
+.navbar-one nav{
+    display: flex;
+}
+.navbar-one nav ul{
+    display: flex;
+    padding-left: 30px;
+    list-style: none;
+    overflow: hidden;
+}
+.navbar-one nav ul li{
+    padding: 20px;
+    transition: .5s;
+    background: linear-gradient(-90deg,lightpink,black,lightpink);
+    background-size:0% 0%;
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+.navbar-one nav ul li:hover , .navbar-one nav ul li:hover a{
+    color:palevioletred;
+    background-size: 100% 100%;
+}
+.navbar-one nav ul li a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color:#fff;
+    font-size: 1.4em;
+    transition: .7s;
+}
+.navbar-sm{
+    margin: auto 20px;
+    height: 50px;
+    width: 50px;
+    border: 1px solid #fff;
+    background-color: lightpink;
+    color: #fff;
+    transition:.7s;
+    font-size: 2em;
+    display: none;
+    box-sizing: border-box;
+    padding: 7px;
+}
+
+.navbar-sm:hover{
+    border-color: lightpink;
+    color: #fff;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-size:0% 100%;     
+
+}
+
+@media screen and (max-width:700px) {
+    .navbar-one nav ul{
+        display: none;
+        position: absolute;
+        transform: translate(10px,0px);
+        background: linear-gradient(lightpink,rgb(248, 72, 101));
+        background-size: 0% 100%;
+        transition: .7s;
+        background-repeat: no-repeat;
+        
+    }
+    .navbar-sm{
+        margin-top: 7px;
+        display: block;
+        position: relative;
+        transition: .3s;        
+    }
+    
+   
+}
+
+#showHide{
+        transition: 1s;
+        display: block;
+        margin-top: 60px;
+        background-size: 100% 100%;     
+}
+#showHide:hover li{
+    background: none;
+    color:rgb(248, 72, 101);
+}
